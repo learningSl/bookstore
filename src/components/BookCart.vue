@@ -39,10 +39,12 @@ export default {
     removeCartBook(){
       this.$emit('removeCartBook')
     },
-    sub() {
+    sub(e) {
+      e.stopPropagation();
       this.$emit("changeCount", false);
     },
-    add() {
+    add(e) {
+      e.stopPropagation();
       this.$emit("changeCount", true);
     },
     change() {

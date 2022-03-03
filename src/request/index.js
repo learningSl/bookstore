@@ -1,11 +1,11 @@
 import axios from 'axios'
 
 export const http1 = axios.create({
-    baseURL: 'http://192.168.43.251:3000',
+    baseURL: 'http://192.168.140.1:3000',
     timeout: 5000
 })
 export const http = axios.create({
-    baseURL: 'http://192.168.43.251:3000/bookstore',
+    baseURL: 'http://192.168.140.1:3000/bookstore',
     timeout: 5000
 })
 
